@@ -1,0 +1,41 @@
+// ----------------- MIXINS
+
+// Estandarización de propiedades
+//-------------------------------
+@mixin allBrowsers($propiedad, $valor) {
+    @each $navegador in webkit, o, moz {
+        -#{$navegador}-#{$propiedad}:#{$valor};
+    }
+    #{$propiedad}:#{$valor};
+}
+// Uso del mixin
+// @include estandarizarNavegadores [propiedad], [valor]
+// @include estandarizarNavegadores('border-radius','2px');
+// Devuelve:
+// -webkit-border-radius: 2px 2px 20px 2px;
+//  -o-border-radius: 2px 2px 2px 2px;
+//  -moz-border-radius: 2px 2px 20px 2px;
+//  border-radius: 2px 2px 2px 2px;
+
+//--------------------
+
+// Anchos en porcentaje 
+// Se recomienda evitar usar "em" como unidad
+@mixin porcentajes($clase, $propiedad, $unidad) {
+    @each $porcentaje in 0, 10, 25, 33, 50, 75, 100 {
+        .#{$clase}_#{$porcentaje} {
+            $porcentaje:#{$porcentaje}#{$unidad};
+            #{$propiedad}:#{$porcentaje};
+        }
+    }
+}
+// Uso del mixin
+// @include porcentajes([nombreClase],[propiedad],[unidad]);
+// @include porcentajes('width','width','px');
+// @include porcentajes('margenIzq','margin-left','%');
+
+@mixin fondoDegradado {
+    //box-shadow: $sombra;
+    border:1px solid #5d849e;
+    
+}

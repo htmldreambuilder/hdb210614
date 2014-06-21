@@ -1,0 +1,20 @@
+HDB\webBundle\Entity\ContactoRapido:
+    type: entity
+    table: null
+    repositoryClass: HDB\webBundle\Entity\ContactoRapidoRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombreContactoRapido:
+            type: string
+            length: 255
+        emailContactoRapido:
+            type: string
+            length: 255
+        mensajeContactoRapido:
+            type: text
+    lifecycleCallbacks: {  }

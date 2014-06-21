@@ -1,0 +1,226 @@
+/* 
+    duqueCSS para Foundation
+    Created on : 05-abr-2014, 16:40:43
+    Author     : Raúl Duque. www.htmlDreamBuilder.com
+*/
+
+/* Descomenta la siguiente línea para comprobar si estás cargando duqueCSS en tu web */
+//  *{ background-color: skyblue };                             
+@include porcentajes('width','width','%');
+
+/* Botones */
+.button {
+    white-space:nowrap;
+}
+
+/* Backgrounds */
+.fondo {
+    background: rgb(125,157,178); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM3ZDlkYjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAzZTY3IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(125,157,178,1) 0%, rgba(0,62,103,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(125,157,178,1)), color-stop(100%,rgba(0,62,103,1))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(125,157,178,1) 0%,rgba(0,62,103,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(125,157,178,1) 0%,rgba(0,62,103,1) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(125,157,178,1) 0%,rgba(0,62,103,1) 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center, rgba(125,157,178,1) 0%,rgba(0,62,103,1) 100%) fixed; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d9db2', endColorstr='#003e67',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+
+.fondoOscuro {
+    background: rgb(53,53,53); /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMSUiIHN0b3AtY29sb3I9IiMzNTM1MzUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI2NiUiIHN0b3AtY29sb3I9IiMyYjJiMmIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMTMxMzEzIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(53,53,53,1) 1%, rgba(43,43,43,1) 66%, rgba(19,19,19,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%,rgba(53,53,53,1)), color-stop(66%,rgba(43,43,43,1)), color-stop(100%,rgba(19,19,19,1))); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(53,53,53,1) 1%,rgba(43,43,43,1) 66%,rgba(19,19,19,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover, rgba(53,53,53,1) 1%,rgba(43,43,43,1) 66%,rgba(19,19,19,1) 100%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover, rgba(53,53,53,1) 1%,rgba(43,43,43,1) 66%,rgba(19,19,19,1) 100%); /* IE10+ */
+    background: radial-gradient(ellipse at center, rgba(53,53,53,1) 1%,rgba(43,43,43,1) 66%,rgba(19,19,19,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353535', endColorstr='#131313',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+
+.white {
+    color:white;
+}
+
+/* Ayudas a la maquetación */
+
+//Altos
+.altoPantalla {
+    height:100vh;
+}
+
+//Anchos
+.width100 {
+    width: 100%;
+}
+
+//Mejoras visuales
+.comillas {
+    font-size: 2em;
+    font-family: $serif2;
+}
+.sombra {
+    box-shadow: $sombraTexto;
+}
+
+/* Clases para diferentes tamaños */
+/* Small screens */
+@media only screen { 
+
+} /* Define mobile styles */
+
+/* CLASES PARA MODO MOVIL */
+@media only screen and (max-width: 40em) { 
+    h1, .h1 {
+    }
+    h2, .h2 {
+    }
+    h3, .h3 {
+    }
+    h4, .h4 {
+    }
+    h5, .h5 {
+    }
+    h6, .h6 {
+    }
+
+    /* Ayudas a la maquetación */
+
+    // Amplia el espacio entre bloques verticales
+    .aire {
+        padding-top:15px;
+        padding-bottom: 15px;
+    }
+    .aireTop {
+        padding-top:15px;
+    }
+    .aireBottom {
+        padding-bottom:15px;
+    }
+    .aire, .aireBottom, .aireTop {
+        overflow:hidden;
+    }
+    /* * {background-color:orange;} */
+
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+/* Medium screens */
+@media only screen and (min-width: 40.063em) { 
+
+} /* min-width 641px, medium screens */
+
+/* CLASES PARA MODO TABLET */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+    h1, .h1 {
+    }
+    h2, .h2 {
+    }
+    h3, .h3 {
+    }
+    h4, .h4 {
+    }
+    h5, .h5 {
+    }
+    h6, .h6 {
+    }
+
+    /* Ayudas a la maquetación */
+    .aire {
+        padding-top:30px;
+        padding-bottom: 30px;
+    }
+    .aireTop {
+        padding-top:30px;
+    }
+    .aireBottom {
+        padding-bottom:30px;
+    }
+    /* * {background-color:blue;} */
+} /* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+
+/* CLASES PARA EL MODO ESCRITORIO */
+@media only screen and (min-width: 64.063em) {
+    h1, .h1 {
+    }
+    h2, .h2 {
+    }
+    h3, .h3 {
+    }
+    h4, .h4 {
+    }
+    h5, .h5 {
+    }
+    h6, .h6 {
+    }
+
+    /* Ayudas a la maquetación */
+    .aire {
+        padding-top:30px;
+        padding-bottom: 30px;
+    }
+    .aireTop {
+        padding-top:30px;
+    }
+    .aireBottom {
+        padding-bottom:30px;
+    }
+    /* * {background-color:red;} */
+} /* min-width 1025px, large screens */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { 
+
+} /* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+
+/* XLarge screens */
+@media only screen and (min-width: 90.063em) { 
+
+} /* min-width 1441px, xlarge screens */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) {
+
+} /* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+
+/* XXLarge screens */
+@media only screen and (min-width: 120.063em) { 
+
+} /* min-width 1921px, xlarge screens */
+
+/*Imagenes con CSS*/  
+.cssImg {
+    position:relative;
+    display:block;
+    padding-top:0.8em;
+    margin:auto;
+    margin-bottom: 20px;
+    width:150px;
+    height:150px;
+    text-align: center;
+    border-radius: 140px;
+    background-color: transparent;
+    color:$azulCorporativo;
+    font-weight:bold;
+    box-shadow: 0px 0px 15px #333;
+
+
+
+    &:hover {
+        box-shadow: 0px 0px 30px #000;
+        opacity: 1;
+    }
+
+
+}
+
+.titularSeccion {
+    h1, h2, h3, h4, h5, h6 {
+        line-height:1em;
+        font-family: $serif;
+        font-size: $h2-font-size+0.6rem;
+        font-weight: 900;
+        color: white;
+        @include allBrowsers('text-shadow', $sombra);
+    }
+
+}

@@ -1,0 +1,22 @@
+{% extends 'HDBwebBundle:Plantillas:default.html.twig' %}
+
+{% block title %}htmlDream Builder{% endblock %}
+
+{% block h1 %}html Dream Builder{% endblock %}
+
+{% block body %}
+    {{ parent() }}
+
+{# include 'HDBwebBundle:Componentes:topBar.html.twig' - Está en la plantilla #}
+
+{% include 'HDBwebBundle:Componentes:cabecera.html.twig' %}
+
+{% include 'HDBwebBundle:Componentes:slider.html.twig' %}
+    
+    <!-- Comienzo cuerpo de la página -->
+    <h1>Servicios</h1>
+    <!-- Fin comienzo de la página -->
+    
+    {% include 'HDBwebBundle:Componentes:pie.html.twig' %}
+
+{% endblock %}

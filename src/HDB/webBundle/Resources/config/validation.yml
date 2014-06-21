@@ -1,0 +1,11 @@
+# HDB/webBundle/Resources/config/validation.yml
+HDB\webBundle\Entity\ContactoRapido:
+    properties:
+        nombreContactoRapido:
+            - NotBlank: ~
+        emailContactoRapido:
+            - NotBlank: ~
+            - Email:
+                message: El correo "{{ value }}" parece no ser válido
+        mensajeContactoRapido:
+            - NotBlank: ~

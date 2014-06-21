@@ -1,0 +1,8 @@
+acme_task:
+    resource: "@AcmeTaskBundle/Resources/config/routing.yml"
+    prefix:   /
+
+hd_bweb:
+    resource: "@HDBwebBundle/Resources/config/routing.yml"
+    prefix:   /
+

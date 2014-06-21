@@ -1,0 +1,27 @@
+// Importamos fuentes
+@import url(http://fonts.googleapis.com/css?family=Josefin+Slab:100,400|Merriweather+Sans:400,800,300italic,300|Cardo);
+
+$sans:'Merriweather Sans', sans-serif;
+$serif:'Josefin Slab', serif;
+$serif2:'Cardo', serif;
+$sombraTexto:2px 1px 1px #555555;
+
+// Tipografías
+.sans {
+    font-family: $sans;
+}
+.serif {
+    font-family: $serif;
+}
+.serif2 {
+    font-family: $serif2;
+}
+.sombraTexto {
+    text-shadow: $sombraTexto;
+}
+.azulCorporativo {
+    color: $azulCorporativo;
+}
+.verdeCorporativo {
+    color: $verdeCorporativo; 
+}

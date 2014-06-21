@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/* 
+    duqueCSS para Foundation
+    Created on : 05-abr-2014, 16:40:43
+    Author     : Raúl Duque. www.htmlDreamBuilder.com
+*/
+/* Descomenta la siguiente línea para comprobar si estás cargando duqueCSS en tu web */
+/* ZONA DE CONFIGURACIÓN */
+/* Modifica de forma sencilla atributos de los elementos más comunes para adaptarlos a tu diseño */
+/* Añade esta clase para pasar a modo pantalla completa */
+.fullWidth {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: initial; }
+
+/* Botones */
+.button {
+  white-space: nowrap; }
+
+/* Backgrounds */
+.fondo {
+  background: #7d9db2;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM3ZDlkYjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAzZTY3IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-radial-gradient(center, ellipse cover, #7d9db2 0%, #003e67 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #7d9db2), color-stop(100%, #003e67));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #7d9db2 0%, #003e67 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #7d9db2 0%, #003e67 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #7d9db2 0%, #003e67 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #7d9db2 0%, #003e67 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7d9db2', endColorstr='#003e67',GradientType=1 );
+  /* IE6-8 fallback on horizontal gradient */ }
+
+.fondoOscuro {
+  background: #353535;
+  /* Old browsers */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMSUiIHN0b3AtY29sb3I9IiMzNTM1MzUiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSI2NiUiIHN0b3AtY29sb3I9IiMyYjJiMmIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMTMxMzEzIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+  background: -moz-radial-gradient(center, ellipse cover, #353535 1%, #2b2b2b 66%, #131313 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(1%, #353535), color-stop(66%, #2b2b2b), color-stop(100%, #131313));
+  /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover, #353535 1%, #2b2b2b 66%, #131313 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover, #353535 1%, #2b2b2b 66%, #131313 100%);
+  /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover, #353535 1%, #2b2b2b 66%, #131313 100%);
+  /* IE10+ */
+  background: radial-gradient(ellipse at center, #353535 1%, #2b2b2b 66%, #131313 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#353535', endColorstr='#131313',GradientType=1 );
+  /* IE6-8 fallback on horizontal gradient */ }
+
+/* Ayudas a la maquetación */
+.altoPantalla {
+  height: 100vh; }
+
+/* Clases para diferentes tamaños */
+/* Small screens */
+/* Define mobile styles */
+/* CLASES PARA MODO MOVIL */
+@media only screen and (max-width: 40em) {
+  /* Ayudas a la maquetación */
+  .aire {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+
+  .aireTop {
+    padding-top: 15px; }
+
+  .aireBottom {
+    padding-bottom: 15px; }
+
+  /* * {background-color:orange;} */ }
+/* max-width 640px, mobile-only styles, use when QAing mobile issues */
+/* Medium screens */
+/* min-width 641px, medium screens */
+/* CLASES PARA MODO TABLET */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  /* Ayudas a la maquetación */
+  .aire {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+
+  .aireTop {
+    padding-top: 30px; }
+
+  .aireBottom {
+    padding-bottom: 30px; }
+
+  /* * {background-color:blue;} */ }
+/* min-width 641px and max-width 1024px, use when QAing tablet-only issues */
+/* CLASES PARA EL MODO ESCRITORIO */
+@media only screen and (min-width: 64.063em) {
+  /* Ayudas a la maquetación */
+  .aire {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+
+  .aireTop {
+    padding-top: 30px; }
+
+  .aireBottom {
+    padding-bottom: 30px; }
+
+  /* * {background-color:red;} */ }
+/* min-width 1025px, large screens */
+/* min-width 1025px and max-width 1440px, use when QAing large screen-only issues */
+/* XLarge screens */
+/* min-width 1441px, xlarge screens */
+/* min-width 1441px and max-width 1920px, use when QAing xlarge screen-only issues */
+/* XXLarge screens */
+/* min-width 1921px, xlarge screens */

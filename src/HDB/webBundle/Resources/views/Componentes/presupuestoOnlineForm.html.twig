@@ -1,0 +1,41 @@
+{{ form_start(form) }}
+<ul class="no-bullet">
+    <li>
+        {{ form_errors(form) }}
+    </li>
+    <li>
+        {# form_label(form.nombreContactoRapido, 'Nombre') #}
+        {{ form_errors(form.nombreContactoRapido) }}
+        {{ form_widget(form.nombreContactoRapido,{ 
+                            'attr': {
+                                'class': 'radius',
+                                'placeholder':nombre
+                        } }) }}
+    </li>
+    <li>
+        {# form_label(form.emailContactoRapido, 'Correo') #}
+        {{ form_errors(form.emailContactoRapido) }}
+        {{ form_widget(form.emailContactoRapido,{ 
+                            'attr': {
+                                'class': 'radius',
+                                'placeholder': correo
+                                    } }) }}
+    </li>
+    <li>
+        {# form_label(form.mensajeContactoRapido, 'Mensaje') #}
+        {{ form_errors(form.mensajeContactoRapido) }}
+        {{ form_widget(form.mensajeContactoRapido,{ 
+                            'attr': {
+                                'class': 'radius',
+                                'placeholder': '¿Cómo podemos ayudarte?'
+                                    } }) }}
+    </li>
+    <li>
+        {{ form_widget(form.cuentanosloContactoRapido,{ 
+                            'attr': {
+                                'class': 'radius right small',
+                                    },
+                            'label': '¡Empecemos!' }) }}
+    </li>
+</ul>
+{{ form_end(form) }}

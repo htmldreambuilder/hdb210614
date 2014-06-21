@@ -1,0 +1,59 @@
+{% set opcionActiva='cazaycampo' %}
+
+{% extends 'HDBwebBundle:Plantillas:default.html.twig' %}
+
+{% block tilte %}Contacto con código promocional{% endblock %}
+
+{% block metas %}
+    {{ parent() }}
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block jsTop %}
+    {{ parent() }}
+{% endblock %}
+
+{% block h1 %}htmlDream Builder{% endblock %}
+
+{% block body %}
+    {{ parent() }} 
+
+{% include 'HDBwebBundle:Componentes:slider.html.twig' %}
+
+{# Contacto rápido #}
+<section class="row aireBottom">
+
+    <!-- Resumen de motivos -->
+    <article class="small-12 medium-6 large-4 large-offset-2 columns">
+        <ul class="no-bullet sombraTexto small-text-center medium-text-right large-text-right">
+            <li><h4>100% Responsive design</h4></li>
+            <li><h4>Alta relación calidad/precio</h4></li>
+            <li><h4>SEO potente en buscadores</h4></li>
+            <li><h4>Webs eficientes y rápidas</h4></li>
+            <li><h4>Tiendas seguras y atractivas</h4></li>
+            <li><h4>Soluciones a medida</h4></li>
+        </ul>
+    </article>
+    <!-- Fin resumen de motivos -->
+
+    <!-- Mostramos el ormulario de contácto rápido si no se envió-->
+    <article class="small-12 medium-6 large-3 left columns">
+        <h3><span class="sans">¿Te podemos ayudar?</span> <br>¿Tienes una idea?</h3>
+
+        {% include 'HDBwebBundle:Componentes:contactoConCodigoForm.html.twig' %}
+
+    </article>
+    <!-- Fin formulario de contacto rápido -->
+</section>
+<!-- Fin contacto rápido -->
+
+{% include 'HDBwebBundle:Componentes:pie.html.twig' %}
+
+{% endblock %}
+
+{% block javaScripts %}
+    {{ parent() }}
+{% endblock %}

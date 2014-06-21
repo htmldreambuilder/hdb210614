@@ -1,0 +1,155 @@
+{% set opcionActiva='servicios' %}
+{% extends 'HDBwebBundle:Plantillas:default.html.twig' %}
+
+{% block tilte %}Servicios de consultoría web de htmlDreamBuilder{% endblock %}
+
+{% block metas %}
+    {{ parent() }}
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block jsTop %}
+    {{ parent() }}
+{% endblock %}
+
+{% block h1 %}Servicios{% endblock %}
+
+{% block body %}
+    {{ parent() }}
+
+    <!-- Slider servicios-->
+    <section class="row aire fondoPie">
+        <article class="small-12 large-4 columns">
+            <ul class="no-bullet titularSeccion">
+                <li class="text-center"><h2>Wordpress</h2></li>
+                <li class="text-center"><h2>Joomla</h2></li>
+                <li class="text-center"><h2>Prestashop</h2></li>
+            </ul>
+            <p>Hazte fan y descarga la propuesta que mejor se adapte a tu negocio</p>
+            <fieldset>
+                <legend>Descarga propuestas para CMS</legend>
+                <form action="#" method="get" name="descargaPropuestasCMS">
+                    <div class="row collapse">
+                        <div class="small-8 columns">
+                            <select id="propuestaCMS">
+                                <option value="prestashop" selected>Tienda prestashop</option>
+                                <option value="wordpress">Blog Wordpress</option>
+                                {#<option value="3">Página web Joomla</option>#}
+                                {#<option value="3">Incidencias Mantis</option>#}
+                            </select>
+                        </div>
+                        <div class="small-4 columns">
+                            <a href="javascript:descargarPropuesta($('#propuestaCMS option:selected').attr('value'));"
+                               class="button postfix" 
+                               id="descargarPropuestaCMS">Desgargar</a>
+                        </div>
+                    </div>
+                </form>
+            </fieldset>
+
+            {#<a href="#" title="próximamente, 'Porqué confiar en wordpress para hacer un blog'"> {#Hacer enlace a "Porque con Wordpress"
+                <img src="{{asset('img/logoWordpress.png')}}" alt="Logo Wordpress" class="th">
+            </a>#}
+            <div class="row collapse">
+                <div class="small-1 columns">
+                    <span class="comillas">"</span>
+                </div>
+                <div class="small-10 columns">
+                    <h3 class="sombraTexto">Tiendas onlines, blogs y páginas corporativas</h3>
+                </div>
+                <div class="small-1 columns">
+                    <span class="comillas">"</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="small-12 large-4 columns">
+            <ul class="no-bullet titularSeccion">
+                <li class="text-center"><h2>Php5</h2></li>
+                <li class="text-center"><h2>Synfony2</h2></li>
+                <li class="text-center"><h2>Angular</h2></li>
+            </ul>
+            <p>Te atendemos personalmente, muestranos ese sueño en HTML</p>
+            <fieldset>
+                <legend>¿Tienes una idea?</legend>
+                <a class="button small radius expand split" 
+                   id="mostrarCuentanos">
+                    ¡Cuentanos!
+                    <span data-dropdown="drop"></span>
+                </a>
+                
+                <div id="formulario" class="hide aireTop">
+                    {% include 'HDBwebBundle:Componentes:contactoRapidoForm.html.twig' %}
+                </div>
+            </fieldset>
+            {#<a href="#" title="próximamente, 'Porqué confiar en wordpress para hacer un blog'"> {#Hacer enlace a "Porque con Wordpress"
+                <img src="{{asset('img/logoWordpress.png')}}" alt="Logo Wordpress" class="th">
+            </a>#}
+            <div class="row collapse">
+                <div class="small-1 columns">
+                    <span class="comillas">"</span>
+                </div>
+                <div class="small-10 columns">
+                    <h3 class="sombraTexto">Aplicaciones de gestión, aplicaciones móviles, widets</h3>
+                </div>
+                <div class="small-1 columns">
+                    <span class="comillas">"</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="small-12 large-4 columns">
+            <ul class="no-bullet titularSeccion">
+                <li class="text-center"><h2>SEO</h2></li>
+                <li class="text-center"><h2>Social Media</h2></li>
+                <li class="text-center"><h2>Adwords</h2></li>
+            </ul>
+            <p>Difusión social, Posicionamiento en Buscadores, Linkbuilding, SEM...</p>
+            {#<fieldset>
+                <legend>Propuestas de difusión</legend>
+                <form action="#" method="get" name="descargaPropuestasDifusion">
+                    <div class="row collapse">
+                        <div class="small-8 columns">
+                            <select id="propuestasDifusion">
+                                <option value="basicoSEO" selected>Pack SEO básico</option>
+                                <option value="avanzadoSEO">Pack SEO avanzado</option>
+                            </select>
+                        </div>
+                        <div class="small-4 columns">
+                            <a href="javascript:descargarPropuesta($('#propuestasDifusion option:selected').attr('value'));"
+                               class="button postfix" >Desgargar</a>
+                        </div>
+                    </div>
+                </form>
+            </fieldset>#}
+
+            {#<a href="#" title="próximamente, 'Porqué confiar en wordpress para hacer un blog'"> {#Hacer enlace a "Porque con Wordpress"
+                <img src="{{asset('img/logoWordpress.png')}}" alt="Logo Wordpress" class="th">
+            </a>#}
+            <div class="row collapse">
+                <div class="small-1 columns">
+                    <span class="comillas">"</span>
+                </div>
+                <div class="small-10 columns">
+                    <h3 class="sombraTexto">SEO avanzado y social marketing</h3>
+                </div>
+                <div class="small-1 columns">
+                    <span class="comillas">"</span>
+                </div>
+            </div>
+
+        </article>
+    </section>
+
+    <!-- Fin slider servicios -->
+
+    {% include 'HDBwebBundle:Componentes:pie.html.twig' %}
+
+{% endblock %}
+
+{% block javaScripts %}
+    {{ parent() }}
+{% endblock %}

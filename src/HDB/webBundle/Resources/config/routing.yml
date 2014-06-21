@@ -1,0 +1,11 @@
+hdb_inicio:
+    pattern:  /inicio/
+    defaults: { _controller: HDBwebBundle:Default:index }
+
+hdb_servicios:
+    pattern: /servicios/
+    defaults: { _controller: HDBwebBundle:Servicios:servicios }
+    
+hdb_cazaycampo:
+    pattern: /cazaycampo/
+    defaults: { _controller: HDBwebBundle:CazaYCampo:cazaYCampo }

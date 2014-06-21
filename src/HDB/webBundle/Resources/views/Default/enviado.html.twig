@@ -1,0 +1,80 @@
+{% set opcionActiva='' %}
+{% extends 'HDBwebBundle:Plantillas:default.html.twig' %}
+
+{% block tilte %}Mensaje enviado con éxito{% endblock %}
+
+{% block metas %}
+    {{ parent() }}
+{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+{% endblock %}
+
+{% block jsTop %}
+    {{ parent() }}
+{% endblock %}
+
+{% block h1 %}Hemos recibido tu mensaje{% endblock %}
+
+{% block body %}
+    {{ parent() }}    
+
+    <!-- Enviado OK -->
+    <section class="row collapse aire">
+        <article class="small-12 columns">
+            <div class="small-12 columns">
+                <h2 class=" sombraTexto">Tu mensaje ha sido enviado:</h2>
+            </div>
+
+            <div class="small-10 small-offset-1 columns">
+                <p class="sans sombraTexto"><span class="comillas">"</span>{{mensaje}}<span class="comillas">"</span></p>
+            </div>
+
+            <div class="small-12 large-10 large-1 columns">
+                <p class="sombraTexto"><strong class="verdeCorporativo">Enhorabuena {{nombre}}</strong>, Hemos dado el primer paso para poner en marcha tu idea.<br>
+                    Nos pondremos en contacto contigo lo antes posible</p>
+                <p class="sombraTexto">Si lo deseas puedes conocernos mejor en los siguientes canales</p>
+            </div>
+        </article>
+    </section>
+    <!-- Fin Enviado OK -->
+
+    <!-- Redes sociales -->
+    <section class="row">
+        <article class="small-12 medium-6 large-4 large-offset-2 columns">
+
+            <!-- Widget Facebook Seguir -->
+            {% include 'HDBwebBundle:Widgets:facebookSeguir.html.twig' %}
+
+            <div class="aireBottom">
+                <!-- Widget Twitter Feed -->
+                {% include 'HDBwebBundle:Widgets:twitterFeed.html.twig' %}
+            </div>
+        </article>
+
+        <article class="small-12 medium-6 large-4 left columns aireBottom">
+            {% include 'HDBwebBundle:Widgets:pinterestPins.html.twig' %}
+            
+            <div class="row aireTop">
+                <div class="small-4 large-4 columns">
+                    <p align="left">
+                        <a target="_blank" href="http://www.twago.es/p/html+dream+builder/107317" title="Ver perfil en Twago">
+                            <img border="0" src="http://www.twago.es/img/provider/es/seal-legs.png" alt="Miembro destacado de twago" />
+                        </a>
+                    </p>
+                </div>
+                <div class="small-8 large-8 columns">
+                    <h3 class=" sombraTexto">Orgullosos de estar entre los 10 mejores perfiles Freelance de Twago</h3>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    {% include 'HDBwebBundle:Componentes:pie.html.twig' %}
+
+{% endblock %}        
+
+{% block javaScripts %}
+    {{ parent() }}
+{% endblock %}

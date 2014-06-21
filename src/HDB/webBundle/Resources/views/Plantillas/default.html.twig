@@ -1,0 +1,60 @@
+{# Definimos la plantilla #}
+{% extends "base.html.twig" %}
+
+{# Meta #}
+{% block title %}htmlDream Builder{% endblock %}
+
+{# Meta #}
+{% block metas %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Verificación Pinterest -->
+    <meta name="p:domain_verify" content="e57538ce4ed0c38eb4002a8d5a3a07ef"/>
+{% endblock %}
+
+{# CSS vía SASS #}
+{% block stylesheets %}
+    <link href="{{asset('css/foundation.css')}}" rel="stylesheet" type="text/css">
+{% endblock %}
+
+{# javaScript #}
+{% block jsTop %}
+    <script type="text/javascript" src="{{asset('js/vendor/modernizr.js')}}"></script>
+{% endblock %}
+
+{# Cuerpo de la web #}
+{% block body %}
+    {# JDK de Facebook para widgets #}
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id))
+                return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&appId=209268342447451&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    {# Cargamos la cabecera #}
+    {% include 'HDBwebBundle:Componentes:cabecera.html.twig' %}
+    {# Cargamos el menú superior #}
+    {% include 'HDBwebBundle:Componentes:topBar.html.twig' %} 
+
+{% endblock %}
+
+{# Bloque de carga de javaScript #}
+{% block javaScripts %}
+    <!-- Carga librerías javaScript -->
+    <!-- jQuery -->
+    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <!-- Zurb Foundation -->
+    <script type="text/javascript" src="{{asset('js/foundation.min.js')}}"></script>
+
+    <script type="text/javascript" src="{{asset('node_modules/sweetcaptcha/index.js')}}"></script>
+
+    <!-- Scripts propios -->
+    <script type="text/javascript" src="{{asset('js/functions.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/constructor.js')}}"></script>
+{% endblock %}

@@ -1,0 +1,53 @@
+{{ form_start(form) }}
+<ul class="no-bullet">
+    <li>
+        {{ form_errors(form) }}
+    </li>
+    <li>
+        {# form_label(form.nombreContactoConCodigo, 'Nombre') #}
+        {{ form_errors(form.nombreContactoConCodigo) }}
+        {{ form_widget(form.nombreContactoConCodigo,{ 
+                            'attr': {
+                            'class': 'radius',
+                            'placeholder':nombre
+                        } }) }}
+    </li>
+    <li>
+        {# form_label(form.emailContactoConCodigo, 'Correo') #}
+        {{ form_errors(form.emailContactoConCodigo) }}
+        {{ form_widget(form.emailContactoConCodigo,{ 
+                            'attr': {
+                            'class': 'radius',
+                            'placeholder': correo
+                                    } }) }}
+    </li>
+    <li>
+        {# form_label(form.mensajeContactoConCodigo, 'Mensaje') #}
+        {{ form_errors(form.mensajeContactoConCodigo) }}
+        {{ form_widget(form.mensajeContactoConCodigo,{ 
+                            'attr': {
+                            'class': 'radius',
+                            'placeholder': '¿Cómo podemos ayudarte?'
+                                    } }) }}
+    </li>
+    <li>
+        Introduce tu código promocional
+        <div class="row collapse">
+            <div class="small-4 columns">
+                {# form_label(form.codigoContactoConCodigo, 'Correo') #}
+                {{ form_errors(form.codigoContactoConCodigo) }}
+                {{ form_widget(form.codigoContactoConCodigo,{ 
+                        'attr': {
+                        'class': 'radius',
+                        'placeholder': 'Código'
+                                } }) }}
+            </div>
+            <div class="small-8 columns">
+                {{ form_widget(form.cuentanosloContactoConCodigo,{ 
+                            'attr': {'class': 'radius right small',},
+                            'label': '¡Empecemos!'}) }}
+            </div>
+        </div>
+    </li>
+</ul>
+{{ form_end(form) }}
