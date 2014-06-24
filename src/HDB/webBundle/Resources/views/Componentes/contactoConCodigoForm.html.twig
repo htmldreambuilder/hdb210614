@@ -27,6 +27,7 @@
         {{ form_widget(form.mensajeContactoConCodigo,{ 
                             'attr': {
                             'class': 'radius',
+                            'rows': '3',
                             'placeholder': '¿Cómo podemos ayudarte?'
                                     } }) }}
     </li>
@@ -44,7 +45,8 @@
             </div>
             <div class="small-8 columns">
                 {{ form_widget(form.cuentanosloContactoConCodigo,{ 
-                            'attr': {'class': 'radius right small',},
+                            'attr': {
+                                'class': 'radius right small', 'rows': '3',},
                             'label': '¡Empecemos!'}) }}
             </div>
         </div>

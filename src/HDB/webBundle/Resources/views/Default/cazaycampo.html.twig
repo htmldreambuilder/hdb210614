@@ -6,17 +6,14 @@
 
 {% block metas %}
     {{ parent() }}
+    <meta name="robots" content="noindex, nofollow"> 
 {% endblock %}
 
 {% block stylesheets %}
     {{ parent() }}
 {% endblock %}
 
-{% block jsTop %}
-    {{ parent() }}
-{% endblock %}
-
-{% block h1 %}htmlDream Builder{% endblock %}
+{% block h1 %} {% endblock %}
 
 {% block body %}
     {{ parent() }} 
@@ -25,7 +22,7 @@
 
 {# Contacto rápido #}
 <section class="row aireBottom">
-
+    
     <!-- Resumen de motivos -->
     <article class="small-12 medium-6 large-4 large-offset-2 columns">
         <ul class="no-bullet sombraTexto small-text-center medium-text-right large-text-right">
@@ -40,8 +37,8 @@
     <!-- Fin resumen de motivos -->
 
     <!-- Mostramos el ormulario de contácto rápido si no se envió-->
-    <article class="small-12 medium-6 large-3 left columns">
-        <h3><span class="sans">¿Te podemos ayudar?</span> <br>¿Tienes una idea?</h3>
+    <article class="small-12 medium-6 large-4 left columns">
+        <h3><span class="sans">10% de descuento, introduce tu código</span> <br>¿Tienes una idea?</h3>
 
         {% include 'HDBwebBundle:Componentes:contactoConCodigoForm.html.twig' %}
 

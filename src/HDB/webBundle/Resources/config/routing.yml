@@ -1,5 +1,5 @@
 hdb_inicio:
-    pattern:  /inicio/
+    pattern:  /
     defaults: { _controller: HDBwebBundle:Default:index }
 
 hdb_servicios:

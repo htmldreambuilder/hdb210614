@@ -1,6 +1,8 @@
 $(document).foundation({
 //Instanciamos el slider de Foundation
     orbit: {
+        animation: 'fade',
+        resume_on_mouseout: true,
         bullets: false,
         slide_number: false,
         timer_show_progress_bar: true,

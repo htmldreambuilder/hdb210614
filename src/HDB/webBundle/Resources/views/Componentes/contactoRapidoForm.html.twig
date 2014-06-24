@@ -27,14 +27,15 @@
         {{ form_widget(form.mensajeContactoRapido,{ 
                             'attr': {
                                 'class': 'radius',
-                                'placeholder': '¿Cómo podemos ayudarte?'
+                                'placeholder': '¿Cómo podemos ayudarte?',
+                                'rows': '3',
                                     } }) }}
     </li>
     <li>
-        ¿A que no eres un robot?
+        Dinos en número cuanto son dos y dos
         <div class="row collapse">
             <div class="small-4 columns">
-                <input type="text" id="captcha" class="radius" placeholder="2 y 2 =">
+                <input type="text" id="captcha" class="radius" placeholder="cuatro">
             </div>
             <div class="small-8 columns">
                 {{ form_widget(form.cuentanosloContactoRapido,{ 

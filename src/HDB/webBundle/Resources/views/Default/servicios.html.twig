@@ -20,15 +20,21 @@
 {% block body %}
     {{ parent() }}
 
-    <!-- Slider servicios-->
+    <section class="row aire">
+        <article class="small-12 columns text-center">
+            <h1 class="sans sombraTexto">Servicios de desarrollo y diseño web</h1>
+        </article>
+    </section>
+    
+    <!-- Servicios-->
     <section class="row aire fondoPie">
-        <article class="small-12 large-4 columns">
+        <article class="small-12 large-4 columns aireBottom">
             <ul class="no-bullet titularSeccion">
                 <li class="text-center"><h2>Wordpress</h2></li>
                 <li class="text-center"><h2>Joomla</h2></li>
                 <li class="text-center"><h2>Prestashop</h2></li>
             </ul>
-            <p>Hazte fan y descarga la propuesta que mejor se adapte a tu negocio</p>
+            <p>Descarga la propuesta que mejor se adapte a tu negocio</p>
             <fieldset>
                 <legend>Descarga propuestas para CMS</legend>
                 <form action="#" method="get" name="descargaPropuestasCMS">
@@ -44,7 +50,7 @@
                         <div class="small-4 columns">
                             <a href="javascript:descargarPropuesta($('#propuestaCMS option:selected').attr('value'));"
                                class="button postfix" 
-                               id="descargarPropuestaCMS">Desgargar</a>
+                               id="descargarPropuestaCMS">Descargar</a>
                         </div>
                     </div>
                 </form>
@@ -58,7 +64,7 @@
                     <span class="comillas">"</span>
                 </div>
                 <div class="small-10 columns">
-                    <h3 class="sombraTexto">Tiendas onlines, blogs y páginas corporativas</h3>
+                    <h3 class="sombraTexto text-center">Tiendas onlines, blogs y páginas corporativas</h3>
                 </div>
                 <div class="small-1 columns">
                     <span class="comillas">"</span>
@@ -66,18 +72,18 @@
             </div>
         </article>
 
-        <article class="small-12 large-4 columns">
+        <article class="small-12 large-4 columns aireBottom">
             <ul class="no-bullet titularSeccion">
                 <li class="text-center"><h2>Php5</h2></li>
-                <li class="text-center"><h2>Synfony2</h2></li>
+                <li class="text-center"><h2>Symfony2</h2></li>
                 <li class="text-center"><h2>Angular</h2></li>
             </ul>
-            <p>Te atendemos personalmente, muestranos ese sueño en HTML</p>
+            <p>Te atendemos personalmente, muéstranos ese sueño en HTML</p>
             <fieldset>
                 <legend>¿Tienes una idea?</legend>
                 <a class="button small radius expand split" 
                    id="mostrarCuentanos">
-                    ¡Cuentanos!
+                    ¡Cuéntanos!
                     <span data-dropdown="drop"></span>
                 </a>
                 
@@ -93,7 +99,7 @@
                     <span class="comillas">"</span>
                 </div>
                 <div class="small-10 columns">
-                    <h3 class="sombraTexto">Aplicaciones de gestión, aplicaciones móviles, widets</h3>
+                    <h3 class="sombraTexto text-center">Aplicaciones de gestión, aplicaciones móviles, widets</h3>
                 </div>
                 <div class="small-1 columns">
                     <span class="comillas">"</span>
@@ -101,7 +107,7 @@
             </div>
         </article>
 
-        <article class="small-12 large-4 columns">
+        <article class="small-12 large-4 columns aireBottom">
             <ul class="no-bullet titularSeccion">
                 <li class="text-center"><h2>SEO</h2></li>
                 <li class="text-center"><h2>Social Media</h2></li>
@@ -134,7 +140,7 @@
                     <span class="comillas">"</span>
                 </div>
                 <div class="small-10 columns">
-                    <h3 class="sombraTexto">SEO avanzado y social marketing</h3>
+                    <h3 class="sombraTexto text-center">SEO avanzado y social marketing</h3>
                 </div>
                 <div class="small-1 columns">
                     <span class="comillas">"</span>
