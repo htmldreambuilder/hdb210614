@@ -2,17 +2,32 @@
 @import url(http://fonts.googleapis.com/css?family=Josefin+Slab:100,400|Merriweather+Sans:400,800,300italic,300|Cardo);
 
 @font-face {
-    font-family: 'urw_bookman_ldemibold';
-    src: url('../fonts/urw-bookman-l-demi-bold-webfont.eot');
-    src: url('../fonts/urw-bookman-l-demi-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/urw-bookman-l-demi-bold-webfont.woff') format('woff'),
-         url('../fonts/urw-bookman-l-demi-bold-webfont.ttf') format('truetype'),
-         url('../fonts/urw-bookman-l-demi-bold-webfont.svg#urw_bookman_ldemibold') format('svg');
+    font-family: 'cooper_blackregular';
+    src: url('../fonts/cooper_black-webfont.eot');
+    src: url('../fonts/cooper_black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/cooper_black-webfont.woff') format('woff'),
+         url('../fonts/cooper_black-webfont.ttf') format('truetype'),
+         url('../fonts/cooper_black-webfont.svg#cooper_blackregular') format('svg');
     font-weight: normal;
     font-style: normal;
+
 }
 
-$sans:'urw_bookman_ldemibold', sans-serif;
+@font-face {
+    font-family: 'ocr_a_stdregular';
+    src: url('../fonts/ocr_a_std-webfont.eot');
+    src: url('../fonts/ocr_a_std-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ocr_a_std-webfont.woff') format('woff'),
+         url('../fonts/ocr_a_std-webfont.ttf') format('truetype'),
+         url('../fonts/ocr_a_std-webfont.svg#ocr_a_stdregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$logo1:'cooper_blackregular', serif;
+$logo2:'ocr_a_stdregular', sans-serif;
+$sans:$logo2;
 $serif:'Josefin Slab', serif;
 $serif2:'Cardo', serif;
 $sombraTexto:2px 1px 1px #555555;
@@ -20,8 +35,16 @@ $sombraTexto:2px 1px 1px #555555;
 
 
 // Tipografías
+.logo {
+    font-family: $logo1;
+}
+.logo2 {
+    font-family: $logo2;
+    font-size: 0.8em;
+    color:$verdeCorporativo;
+}
 .sans {
-    font-family: $sans;
+    font-family: $logo2;
 }
 .serif {
     font-family: $serif;
@@ -37,4 +60,11 @@ $sombraTexto:2px 1px 1px #555555;
 }
 .verdeCorporativo {
     color: $verdeCorporativo; 
+}
+
+.comillas {
+    position:relative;
+    top:0.5em;
+    font-size: 3em;
+    font-family: $logo1;
 }

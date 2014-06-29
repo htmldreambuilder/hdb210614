@@ -7,7 +7,9 @@ $(document).foundation({
         slide_number: false,
         timer_show_progress_bar: true,
         timer: true,
-        timer_speed: 4000 //4000
+        timer_speed: 4000, //4000
+        //before_slide_change: alert('antes'), // Execute a function before the slide changes
+        //after_slide_change: alert('despues') // Execute a function after the slide changes
     }
 });
 

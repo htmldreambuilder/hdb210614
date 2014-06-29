@@ -1,7 +1,7 @@
 {% set opcionActiva='servicios' %}
 {% extends 'HDBwebBundle:Plantillas:default.html.twig' %}
 
-{% block tilte %}Servicios de consultoría web de htmlDreamBuilder{% endblock %}
+{% block titulo %}Servicios de consultoría web de htmlDreamBuilder{% endblock %}
 
 {% block metas %}
     {{ parent() }}
@@ -22,7 +22,7 @@
 
     <section class="row aire">
         <article class="small-12 columns text-center">
-            <h1 class="sans sombraTexto">Servicios de desarrollo y diseño web</h1>
+            <h1 class="logo sombraTexto">Servicios de desarrollo y diseño web</h1>
         </article>
     </section>
     
@@ -39,15 +39,15 @@
                 <legend>Descarga propuestas para CMS</legend>
                 <form action="#" method="get" name="descargaPropuestasCMS">
                     <div class="row collapse">
-                        <div class="small-8 columns">
+                        <div class="small-7 columns">
                             <select id="propuestaCMS">
-                                <option value="prestashop" selected>Tienda prestashop</option>
-                                <option value="wordpress">Blog Wordpress</option>
+                                <option value="{{asset('descargas/prestashop.pdf')}}" selected>Tienda prestashop</option>
+                                <option value="{{asset('descargas/wordpress.pdf')}}">Blog Wordpress</option>
                                 {#<option value="3">Página web Joomla</option>#}
                                 {#<option value="3">Incidencias Mantis</option>#}
                             </select>
                         </div>
-                        <div class="small-4 columns">
+                        <div class="small-5 columns">
                             <a href="javascript:descargarPropuesta($('#propuestaCMS option:selected').attr('value'));"
                                class="button postfix" 
                                id="descargarPropuestaCMS">Descargar</a>
@@ -60,14 +60,8 @@
                 <img src="{{asset('img/logoWordpress.png')}}" alt="Logo Wordpress" class="th">
             </a>#}
             <div class="row collapse">
-                <div class="small-1 columns">
-                    <span class="comillas">"</span>
-                </div>
-                <div class="small-10 columns">
+                <div class="small-10 large-offset-1 columns">
                     <h3 class="sombraTexto text-center">Tiendas onlines, blogs y páginas corporativas</h3>
-                </div>
-                <div class="small-1 columns">
-                    <span class="comillas">"</span>
                 </div>
             </div>
         </article>
@@ -81,8 +75,8 @@
             <p>Te atendemos personalmente, muéstranos ese sueño en HTML</p>
             <fieldset>
                 <legend>¿Tienes una idea?</legend>
-                <a class="button small radius expand split" 
-                   id="mostrarCuentanos">
+                <a id="mostrarCuentanos"
+                   class="button radius expand split">
                     ¡Cuéntanos!
                     <span data-dropdown="drop"></span>
                 </a>
@@ -95,14 +89,8 @@
                 <img src="{{asset('img/logoWordpress.png')}}" alt="Logo Wordpress" class="th">
             </a>#}
             <div class="row collapse">
-                <div class="small-1 columns">
-                    <span class="comillas">"</span>
-                </div>
-                <div class="small-10 columns">
-                    <h3 class="sombraTexto text-center">Aplicaciones de gestión, aplicaciones móviles, widets</h3>
-                </div>
-                <div class="small-1 columns">
-                    <span class="comillas">"</span>
+                <div class="small-10 large-offset-1 columns">
+                    <h3 class="sombraTexto text-center">Aplicaciones de gestión, aplicaciones móviles</h3>
                 </div>
             </div>
         </article>
@@ -136,14 +124,8 @@
                 <img src="{{asset('img/logoWordpress.png')}}" alt="Logo Wordpress" class="th">
             </a>#}
             <div class="row collapse">
-                <div class="small-1 columns">
-                    <span class="comillas">"</span>
-                </div>
-                <div class="small-10 columns">
+                <div class="small-10 large-offset-1 columns">
                     <h3 class="sombraTexto text-center">SEO avanzado y social marketing</h3>
-                </div>
-                <div class="small-1 columns">
-                    <span class="comillas">"</span>
                 </div>
             </div>
 

@@ -57,10 +57,7 @@
 }
 
 //Mejoras visuales
-.comillas {
-    font-size: 2em;
-    font-family: $serif2;
-}
+
 .sombra {
     box-shadow: $sombraTexto;
 }
@@ -223,4 +220,12 @@
         @include allBrowsers('text-shadow', $sombra);
     }
 
+}
+
+.table {
+    display:table;
+}
+
+.relativa {
+    display:relative;
 }

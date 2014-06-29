@@ -48,6 +48,8 @@ $legend-font-weight: $font-weight-bold !default;
 $legend-padding: rem-calc(0 3) !default;
 
 // We use these to style the prefix and postfix input elements
+$input-prefix-padding-top:0px!default;
+$input-prefix-padding-bottom:0px!default;
 $input-prefix-bg: scale-color(#fff, $lightness: -5%) !default;
 $input-prefix-border-color: scale-color(#fff, $lightness: -20%) !default;
 $input-prefix-border-size: 1px !default;
@@ -55,6 +57,9 @@ $input-prefix-border-type: solid !default;
 $input-prefix-overflow: hidden !default;
 $input-prefix-font-color: #333 !default;
 $input-prefix-font-color-alt: #fff !default;
+$input-prefix-font-weight:normal!default;
+$input-prefix-font-family:arial!default;
+$input-prefix-box-shadow:none!default;
 
 $input-postfix-border-radius: 0px 3px 3px 0px!default;
 
@@ -170,15 +175,17 @@ $select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%) !default;
     z-index: 2;
     text-align: center;
     width: 100%;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding-top: $input-prefix-padding-top;
+    padding-bottom: $input-prefix-padding-bottom;
     border-style: $input-prefix-border-type;
     border-width: $input-prefix-border-size;
     overflow: $input-prefix-overflow;
     font-size: $form-label-font-size;
+    font-weight: $input-prefix-font-weight;
     height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(1));
     line-height: ($input-font-size + ($form-spacing * 1.5) - rem-calc(1));
-    box-shadow: $sombra;
+    font-family: $input-prefix-font-family;
+    box-shadow: $input-prefix-box-shadow;
 }
 
 // @MIXIN
@@ -239,8 +246,8 @@ $select-hover-bg-color: scale-color($select-bg-color, $lightness: -3%) !default;
     @if $is-button {
         padding-#{$default-float}: 0;
         padding-#{$opposite-direction}: 0;
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-top: $input-prefix-padding-top;
+        padding-bottom: $input-prefix-padding-bottom;
         text-align: center;
         line-height: rem-calc(34);
         border: none;
